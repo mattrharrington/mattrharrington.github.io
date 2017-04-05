@@ -1,0 +1,25 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-image: url(../images/headshot.jpg);
+	background-size: cover;
+	font-family: Impact, sans-serif;
+}
+
+header {padding: 30px;}
+
+h1 {font-size: 75px;}
+a {font-size: 25px;
+	text-decoration: none;
+}
+
+nav a {
+	margin-right: 10px;
+}
+
+h1, h2, p, a {
+	color: #B7E6FF;
+}
