@@ -9,6 +9,7 @@
 
 .wrapper {
 	max-width: 1200px;
+	width: 97%;
 	margin: 0 auto;
 }
 
@@ -60,8 +61,8 @@ h1 {
 h2 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 1.5em;
-	margin-top: 18px;
-	margin-bottom: 18px;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 .hero {
@@ -70,7 +71,7 @@ h2 {
 
 #intro img {
 	width: 100%;
-	padding: 5px;
+	padding: .27em;
 }
 
 .heroleft {
@@ -101,7 +102,7 @@ a {
 footer {/*
     background-color: #FF957E;
     border: 1px black solid;*/
-    padding: 20px;
+    padding: 1em;
 }
 
 .clearfix:after, section:after {
@@ -118,7 +119,7 @@ footer {/*
 	float:left;
 }
 #one div, #two div, #three div {
-	padding:4em;
+	padding:0 4em;
 }
 #two > * {
 	float:right;
@@ -135,4 +136,38 @@ footer {/*
 .pictureone {
 	display: block;
 	margin: auto;
+}
+
+@media only screen and (max-width: 1025px) {
+	header img {
+		margin: 0 auto;
+	}
+	nav {
+		position: initial;
+		text-align: center;
+		top: initial;
+		transform: initial;
+	}
+	nav a {
+		padding: 0 .25em .25em .25em;
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	.heroright {
+		display: none;
+	}
+	.heroleft {
+		width: 100%;
+	}
+}
+	#one > *, #two > *, #three > * {
+		width: 100%;
+		float: none;
+	}
+
+@media only screen and (max-width: 563px) {
+	header img {
+		width: 100%;
+	}
 }
