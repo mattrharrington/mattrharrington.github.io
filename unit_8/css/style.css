@@ -9,6 +9,7 @@
 
 .wrapper {
 	max-width: 1200px;
+	width: 97%;
 	margin: 0 auto;
 }
 
@@ -70,7 +71,7 @@ h2 {
 
 #intro img {
 	width: 100%;
-	padding: .3em;
+	padding: .27em;
 }
 
 .heroleft {
@@ -118,7 +119,7 @@ footer {/*
 	float:left;
 }
 #one div, #two div, #three div {
-	padding:4em;
+	padding:0 4em;
 }
 #two > * {
 	float:right;
@@ -137,12 +138,57 @@ footer {/*
 	margin: auto;
 }
 
-@media only screen and (max-width: 768px) {
-	#one > *, #two > *, #three > * {
-		float: none;
-		width: auto;
+@media only screen and (max-width: 1024px) {
+	.gallery {
+		width: 50%;
 	}
+	body {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	header img {
+		margin: 0 auto;
+	}
+	nav {
+		position: initial;
+		text-align: center;
+		top: initial;
+		transform: initial;
+	}
+	nav a {
+		padding: 0 .25em .25em .25em;
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	.heroright {
+		display: none;
+	}
+	.heroleft {
+		width: 100%;
+	}
+
+	#one > *, #two > *, #three > * {
+		width: 100%;
+		float: none;
+	}
+	h1 {
+		line-height: 1;
+	}
+
 	#one div, #two div, #three div {
-		padding: none;
+		padding: 0 1.5em;
+	}
+
+	.gallery {
+		float: none;
+		width: 100%;
+	}
+
+@media only screen and (max-width: 563px) {
+	header img {
+		width: 100%;
 	}
 }
