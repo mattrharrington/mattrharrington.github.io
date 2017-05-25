@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Oswald:700');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	max-width: 1200px;
+	width: 97%;
+	margin: 0 auto;
+}
+
+body {
+	color: #222222;
+	font-size: 18px;
+	text-align: left;
+	font-family: 'Playfair Display', serif;
+	line-height: 1.5em;
+}
+
+header {
+	position: relative;
+}
+
+header img {
+	display: block;
+}
+
+nav {
+	text-align: left;
+	font-family: 'Oswald', sans-serif;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+	right: 0;
+}
+
+nav a {
+	border-bottom: none;
+	display: inline-block;
+	padding: 1em;
+}
+
+nav a:hover{
+	color: #dd0000;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+	margin-top: .75em;
+	margin-bottom: 2em;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.hero {
+	float:left;
+}
+
+#intro img {
+	width: 100%;
+	padding: .27em;
+}
+
+.heroleft {
+	width: 68%;
+}
+
+.heroright {
+	width: 31%;
+}
+
+.gallery {
+	padding: .25em;
+	float: left;
+	width: 33.33%;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+a {
+	font-family: 'Oswald', sans-serif;
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px solid #222;
+}
+
+footer {
+    padding: 1em;
+}
+
+.clearfix:after, section:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#one > *, #two > *, #three > * {
+	width:50%;
+	float:left;
+}
+#one div, #two div, #three div {
+	padding:0 4em;
+}
+#two > * {
+	float:right;
+}
+
+#four {
+	padding: 1em 0;
+}
+
+#one, #two {
+	padding-bottom: 3em;
+}
+
+.pictureone {
+	display: block;
+	margin: auto;
+}
+
+@media only screen and (max-width: 1024px) {
+	.gallery {
+		width: 50%;
+	}
+	body {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	header img {
+		margin: 0 auto;
+	}
+	nav {
+		position: initial;
+		text-align: center;
+		top: initial;
+		transform: initial;
+	}
+	nav a {
+		padding: 0 .25em .25em .25em;
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	.heroright {
+		display: none;
+	}
+	.heroleft {
+		width: 100%;
+	}
+
+	#one > *, #two > *, #three > * {
+		width: 100%;
+		float: none;
+	}
+	h1 {
+		line-height: 1;
+	}
+
+	#one div, #two div, #three div {
+		padding: 0 1.5em;
+	}
+
+	.gallery {
+		float: none;
+		width: 100%;
+	}
+
+@media only screen and (max-width: 563px) {
+	header img {
+		width: 100%;
+	}
+}
